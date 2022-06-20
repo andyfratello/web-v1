@@ -1,0 +1,76 @@
+:root{
+
+    --link: rgb(255, 255, 255);
+    --background: rgb(25, 26, 37);
+    --text:#fff;
+
+
+    --animation: 0.2s;
+
+    --elements-margin:2rem; 
+    --elements-height:4rem;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: var(--elements-height);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-left: var(--elements-margin);
+}
+
+.menu{
+    font-family: Roboto;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--background);
+}
+
+.menu nav a:hover{
+   transform: scale(1.1);
+   transition: transform var(--animation);
+}
+
+.menu nav{
+    align-items: center;
+    height:var(--elements-height);
+    margin-right: 5%;
+    display: flex;
+}
+
+.menu nav a{
+    margin-left:var(--elements-margin);
+    transition: transform var(--animation);
+}
+
+/* .menu nav a:last-child{
+    margin-right:0;  
+} */
+
+.menu a{
+    color: var(--link);
+}
+
+#participa{
+    background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    color: rgb(49, 49, 49);
+}
+
+
+/* RESPONSIVE */
+
+
