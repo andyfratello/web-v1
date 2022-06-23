@@ -1,0 +1,101 @@
+:root{
+    --background: rgb(25, 26, 37);
+    --size-div-titulo:20%;
+    --linkedin-blue: rgb(0, 114, 177);
+    --instagram-pink: rgb(193, 53, 132);
+}
+
+
+body{
+    font-family: Roboto;
+}
+
+.titulo{
+    height: var(--size-div-titulo);
+    background-color: var(--background);
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3rem;
+}
+
+.perfiles{
+    height:calc(100% - var(--size-div-titulo));
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    padding:4rem;
+}
+
+
+.perfil{
+    flex-grow: 1;
+    margin:2rem;
+    border-radius:1rem;
+    min-width:10rem;
+    min-height:10rem;
+    max-width:20rem;
+    max-height:20rem;
+}
+
+.pfp{
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+h2{
+    font-family: 'Faster One', cursive;
+    background: -webkit-linear-gradient(#00820d, #0011ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+h2:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.container {
+    padding: 0 16px;
+    text-align: center;
+}
+
+.content{
+    text-align: left;
+    padding: 10px;
+}
+
+.content a{
+    color: inherit;
+}
+
+.linkedin{
+    color: var(--linkedin-blue);
+}
+
+.instagram{
+    color: var(--instagram-pink);
+}
+
+.linkedin:hover{
+    transform: translateY(0.2rem);
+}
+
+.github:hover{
+    transform: translateY(0.2rem);
+}
+
+.instagram:hover{
+    transform: translateY(0.2rem);
+}
+
+#photo{
+    border-radius: 20px;
+}
+  
