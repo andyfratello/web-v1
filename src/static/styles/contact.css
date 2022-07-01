@@ -11,64 +11,89 @@ body{
 }
 
 .titulo{
-    height: var(--size-div-titulo);
     background-color: var(--background);
     color: white;
     text-align: center;
+    padding: 1.5rem;
     font-size: 2.5rem;
-    padding: 3rem;
 }
 
 .perfiles{
-    height:calc(100% - var(--size-div-titulo));
+    /* height:calc(100% - var(--size-div-titulo)); */
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
     /* justify-content: center;
     align-items: center; */
-    flex-direction: row;
-    padding:4rem;
+    margin: auto;
 }
 
-
+/* 200 * 370 */
 .perfil{
-    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
     margin:2rem;
-    border-radius:1rem;
-    min-width:10rem;
-    min-height:10rem;
-    max-width:20rem;
-    max-height:20rem;
-}
-
-.pfp{
-    border-radius: 1rem;
+    border-radius:1rem;   
+    width: 18rem;
+    height: 28rem;  
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-    margin: 10px;
+ 
 }
 
-h2{
-    font-family: 'Faster One', cursive;
-    background: -webkit-linear-gradient(#00820d, #0011ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 0.5rem;
+h2{ 
+    font-family: 'Roboto';
+    font-weight: 900;
     font-size: 2rem;
 }
 
-h2:hover{
-    transform: scale(1.1);
-    transition: transform 0.2s;
+.profile-picture{
+
+    flex-grow: 1;
+    height:fit-content;
+    border-radius:1rem;
+    overflow: hidden;
+}
+
+#andreu{
+    background-image: url("../media/andreu_.jpg");
+    background-size: cover;
+}
+
+#dani{
+    background-image: url("../media/defaultProfile.png");
+    background-size: cover;
+}
+
+#elias{
+    background-image: url("../media/eliasA_.jpg");
+    background-size: cover;
+}
+
+.profile-picture img{
+    height: 100%;
 }
 
 .container {
-    padding: 0 16px;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
 }
 
+.container div{
+    padding:0.3rem 0;
+}
+
 .content{
+    /* margin-top: 0.5rem; */
     text-align: left;
-    padding: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column ;   
+    transition: transform 200ms;
 }
 
 .content a{
@@ -83,19 +108,11 @@ h2:hover{
     color: var(--instagram-pink);
 }
 
-.linkedin:hover{
-    transform: translateY(0.2rem);
-}
-
-.github:hover{
-    transform: translateY(0.2rem);
-}
-
-.instagram:hover{
-    transform: translateY(0.2rem);
+.content div:hover{
+    transform: translateX(0.3rem);
+    transition: transform 200ms;
 }
 
 #photo{
     border-radius: 20px;
 }
-  
